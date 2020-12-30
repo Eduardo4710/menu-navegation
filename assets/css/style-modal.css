@@ -1,0 +1,132 @@
+.modal{
+	width: 100%;
+	height: 100vh;
+	/* display: flex;
+	justify-content: center; */
+	/* align-items: center; */
+	}
+	.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+	overflow: auto;
+	}
+	#btn-modal:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+	} 
+	.contenedor_modal{
+	width: 500px;
+	height: auto;
+	margin: auto;
+	background: #fff;
+	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+	transition: all 500ms ease;
+	position: relative;
+	transform: translateY(-30%);
+	border-radius:5px;
+	top: 77px;
+	padding: 10px;
+	
+	
+}
+	.contenido
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	
+		
+	}
+	.input_conte
+	{
+	margin: 10px 20px;	
+
+
+	}
+	#hr
+	{
+		max-width: 100%;
+		border-color: #b7b6b626;
+		
+	}
+	h3
+	{
+		margin: 0;
+		padding: 0;
+		font-size: 15px;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 100;
+		
+	
+	}
+	.input_conte input
+	{
+	 border: 1px solid rgba(49, 49, 49, 0.199);
+	 padding: 5px;
+	 border-radius: 4px;
+	 outline: none;
+	 width: 200px;
+	}
+	.input_conte input:focus
+	{
+		border: 1px solid rgba(14, 144, 219, 0.418);
+		box-shadow: 0px 0px 30px rgba(72, 166, 221, 0.418);
+	}
+	#btn-modal:checked ~ .modal .contenedor_modal{
+	transform: translateY(0%);
+	} 
+	#btn-button
+	{
+		border:none;
+		padding: 10px;
+		background: rgb(43, 148, 235);
+		color: white;
+		outline: none;
+		border-radius: 5px;
+		position: relative;
+		left: 80%;
+	}
+	.contenedor_modal header{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 10px;
+	background: #ffffff;
+	color: rgb(63, 63, 63);
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+	.contenedor_modal label{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: rgba(104, 102, 102, 0.719);
+	font-size: 20px;
+	cursor: pointer;
+	}
+	#btn-modal{
+	display: none;
+	}
+	.lbl-modal{
+	background: rgb(10, 129, 226);
+	padding: 10px 15px;
+	border-radius: 4px;
+	cursor: pointer;
+	position: fixed;
+	right: 10px ;
+	top: 6px;
+	z-index: 10;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 60px;
+	
+	}
+	@media only screen and (min-width:320px) and (max-width:768px){
+	.contenedor_modal{
+	width: 95%;
+	}
+	}
